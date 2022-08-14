@@ -1,8 +1,13 @@
-import { Component } from 'react';
+import React,{ Component } from 'react';
 
 class App extends Component {
   render() {
-    return <h1>Hello, world!!</h1>;
+    return (
+      <>
+        <label htmlFor="bar">bar</label>
+        <input type="text" onChange={() => {console.log("Hi!")}} />
+      </>
+    )
   }
 }
 
